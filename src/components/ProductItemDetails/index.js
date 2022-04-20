@@ -187,16 +187,7 @@ class ProductItemDetails extends Component {
     </div>
   )
 
-  onClickMinus = () => {
-    const {itemsCount} = this.state
-    if (itemsCount > 1) {
-      this.setState(prevState => ({itemsCount: prevState.itemsCount - 1}))
-    }
-  }
-
-  onClickPlus = () => {
-    this.setState(prevState => ({itemsCount: prevState.itemsCount + 1}))
-  }
+  
 
   renderSimilarProducts = () => {
     const {similarProducts} = this.state
