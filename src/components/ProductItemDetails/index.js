@@ -158,7 +158,6 @@ class ProductItemDetails extends Component {
 
             <div>
               <button
-                testid="plus"
                 type="button"
                 className="add-to-cart-button"
               >
@@ -236,7 +235,7 @@ class ProductItemDetails extends Component {
     return (
       <div className="product-item-details-container">
         <Header />
-        {apiStatus === 'SUCCESS' && this.renderProductsItemViews()}
+        {this.renderProductsItemViews()}
       </div>
     )
   }
